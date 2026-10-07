@@ -1,4 +1,6 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL =
+  import.meta.env.VITE_API_URL ||
+  "https://closetiq-tr0j.onrender.com/api";
 
 const getToken = () => {
   return localStorage.getItem("closetiq_token");
